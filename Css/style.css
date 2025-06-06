@@ -1,0 +1,139 @@
+
+.marquesina {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #4f4cff;
+    color: white;
+    padding: 10px;
+}
+
+.marquesina p {
+    display: inline-block;
+    font-size: 20px;
+    animation: mover 5s linear infinite;
+}
+
+@keyframes mover {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-btn:hover {
+    background-color: #444;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+.submenu li {
+    padding: 5px 0;
+}
+
+.submenu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+#fotoluis{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 20px auto;
+
+}
+.consolas {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.consolas h2 {
+    margin-bottom: 20px;
+}
+
+.contenedor-consolas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.consola {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.consola img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.consola h3 {
+    margin: 10px 0 5px;
+}
+
+.consola p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.consola button {
+    background-color: #c01818;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.consola button:hover {
+    background-color: #3c3cd0;
+}
